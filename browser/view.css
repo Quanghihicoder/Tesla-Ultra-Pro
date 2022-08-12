@@ -1,0 +1,103 @@
+/* Header */
+html {
+  background-image: url("img/road.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body p{
+  color: white;
+  font-weight: 700;
+}
+
+.introduction {
+  /* text-align: center; */
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #000000;
+}
+
+.introduction .project-name {
+  flex: 0 0 30%;
+}
+
+.introduction .guideInf {
+  flex: 0 0 70%;
+  text-align: center;
+  
+}
+
+.introduction .guideInf p {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 15px;
+  font-weight: 700;
+  color: rgba(15, 243, 110, 0.897);
+  font-size: 28px;
+  display: inline;
+}
+
+.introduction .project-name p {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 28px;
+}
+
+/* Mode control bar */
+.mode-control {
+  height: 50px;
+}
+
+.mode-control div {
+  display: inline;
+  margin-left: 17.5%;
+  position: relative;
+}
+
+
+/* Control Robot Box */
+.control-board {
+  padding-top: 20px;
+  display: flex;
+}
+
+.control-board .control-box {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.control-board .control-box .direction-display p {
+  font-size: 24px;
+  margin-left: 30%;
+}
+
+/* Display Robot Status */
+.control-board .notification {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.control-board .notification .line1 {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.control-board .notification .line1 .avoid-collision,
+.control-board .notification .line1 .car-abyss {
+  padding-right: 45px;
+}
+
+.control-board .notification .line2 {
+  display: flex;
+}
+
+.introduction .guideInf .linkToControl{
+  font-size: 28px;
+  display: none;
+}
+
+

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Robot Car Admin Page</title>
+    <meta name="adminpage" content="Robot Car Admin Page">
+    <link rel="stylesheet" href="admin.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/caricon.png" />
+
+</head>
+
+<header>
+    <section class="introduction">
+        <div class="project-name">
+            <p>Robot Car - Admin Page</p>
+            <p>Aka: Tesla Ultra Pro</p>
+        </div>
+        <div class="guideInf">
+            <p id="guideInf">This is the admin page</p>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="body-content">
+        <section class="table-content">
+            <span>Car Data Table: 10 latest data</span>
+            <img src="img/reload.png" id="reload-btn">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <h1>CarDataID</h1>
+                        </th>
+                        <th>
+                            <h1>UserName</h1>
+                        </th>
+                        <th>
+                            <h1>Direction</h1>
+                        </th>
+                        <th>
+                            <h1>ForwardCollisionWarning</h1>
+                        </th>
+                        <th>
+                            <h1>AbyssForward</h1>
+                        </th>
+                        <th>
+                            <h1>CarLight</h1>
+                        </th>
+                        <th>
+                            <h1>Date</h1>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section class="control-box">
+            <div class="notification">
+                <p id="forceLogout-text">User is currently in Control page</p>
+                <p id="warning-force"></p>
+                <form class="change-form" id="force-form">
+                    <input type="password" placeholder="adminpassword" id="adminpassword-force" required />
+                    <button type="button" id="forceLogout-btn">Force Logout</button>
+                </form>
+            </div>
+            <div class="form-data">
+                <p id="form-noti">Change Control Page password</p>
+                <p id="warning-change"></p>
+                <form class="change-form" id="change-form">
+                    <input type="password" placeholder="adminpassword" id="adminpassword" required />
+                    <input type="password" placeholder="oldpassword" id="oldpassword" required />
+                    <input type="password" placeholder="newpassword" id="newpassword" required />
+                    <button type="button" id="submit-btn">Change password</button>
+                </form>
+            </div>
+        </section>
+
+    </section>
+    <script type="module" src="admin.js"></script>
+</body>
+
+</html>

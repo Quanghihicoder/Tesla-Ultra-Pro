@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Robot Car Control Page</title>
+    <meta name="controlpage" content="Robot Car Control Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" href="img/caricon.png" />
+
+</head>
+
+<header>
+    <section class="introduction">
+        <div class="project-name">
+            <p>Robot Car - Control Page</p>
+            <p>Aka: Tesla Ultra Pro</p>
+        </div>
+        <div class="guideInf">
+            <p id="guideInf">Please use IR remote control, press '2' to unlock the car</p>
+        </div>
+    </section>
+</header>
+
+<body>
+
+
+    <section class="mode-control">
+        <div>
+            <button id="control-mode-btn">Control Mode</button>
+        </div>
+        <div>
+            <button id="steering-mode-btn">Steering Mode</button>
+        </div>
+        <div>
+            <button id="voice-mode-btn">Voice Mode</button>
+        </div>
+    </section>
+
+    <section class="control-board">
+        <div class="control-box">
+            <div class="direction-display">
+                <p id="direction-content">Actual Car Direction:</p>
+            </div>
+
+            <div id="control-mode" class="mode1">
+                <div class="forward-button center-button">
+                    <button id="Forwardbtn">Forward</button>
+                </div>
+                <div class="left-button inline-button">
+                    <button id="Leftbtn">Left</button>
+                </div>
+                <div class="stop-button inline-button">
+                    <button id="Stopbtn">Stop</button>
+                </div>
+                <div class="right-button inline-button">
+                    <button id="Rightbtn">Right</button>
+                </div>
+                <div class="reverse-button center-button">
+                    <button id="Backbtn">Reverse</button>
+                </div>
+            </div>
+
+            <div id="steering-mode">
+                <div class="container">
+                    <p id="yourControl">Your Control: </p>
+                    <video class="input_video"></video>
+                    <canvas class="output_canvas" width="760px" height="400px"></canvas>
+                </div>
+            </div>
+
+            <div id="voice-mode" class="mode3">
+                <div class="texts">
+                </div>
+                <img id="record-btn" src="img/mic.png">
+            </div>
+
+        </div>
+
+
+        <div class="notification">
+            <div class="line1">
+                <div class="avoid-collision">
+                    <p class="warningText" id="warningText">Distance Forward:</p>
+                    <div class="warningImg">
+                        <img id="warningImg" src="img/warning-2.png">
+                    </div>
+                </div>
+
+                <div class="car-abyss">
+                    <p id="carAbyssForwardText">Abyss Forward:</p>
+                    <div class="abyss-1">
+                        <img id="carAbyssForwardImg" src="img/warning-3.png">
+                    </div>
+                </div>
+
+                <div class="car-light">
+                    <p id="carLightText">Auto Car Light:</p>
+                    <div class="light-1">
+                        <img id="carLightImg" src="img/light-1.png">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="line2">
+                <div class="gear">
+                    <div class="gearImg">
+                        <img id="gear" src="img/gear.png">
+                    </div>
+                    <div class="text">
+                        <p id="gearD">D</p>
+                        <p id="gearR">R</p>
+                    </div>
+                </div>
+
+                <div class="start-engine">
+                    <p id="engineText">Engine: Off</p>
+                    <img id="engineImg" src="img/startengine-1.png">
+                </div>
+                <div class="car-key">
+                    <p id="carKeyText">Car Key: Lock</p>
+                    <img src="img/carkey-1.png">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+</body>
+
+</html>

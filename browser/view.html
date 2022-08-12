@@ -1,0 +1,74 @@
+<!-- https://www.youtube.com/watch?v=BOITPwChVP4 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Robot Car View Page</title>
+    <meta name="viewpage" content="Robot Car View Page">
+    <link rel="stylesheet" href="view.css">
+</head>
+
+<header>
+    <section class="introduction">
+        <div class="project-name">
+            <p>Robot Car - View Page</p>
+            <p>Aka: Tesla Ultra Pro</p>
+        </div>
+        <div class="guideInf">
+            <p id="guideInf">This is the viewing page, someone is currently on the control page, you can't log in now</p>
+            <a href="/test.html" class="linkToControl" id="linkToControl">test.html</a>
+        </div>
+        
+    </section>
+</header>
+
+<body>
+    <section class="control-board">
+        <div class="control-box">
+            <div class="direction-display">
+                <p id="direction-content">Actual Car Direction:</p>
+            </div>
+        </div>
+
+
+        <div class="notification">
+            <div class="line1">
+                <div class="avoid-collision">
+                    <p class="warningText" id="warningText">Distance Forward:</p>
+                    <div class="warningImg">
+                        <img id="warningImg" src="img/warning-2.png">
+                    </div>
+                </div>
+        
+                <div class="car-abyss">
+                    <p id="carAbyssForwardText">Abyss Forward:</p>
+                    <div class="abyss-1">
+                        <img id="carAbyssForwardImg" src="img/warning-3.png">
+                    </div>
+                </div>
+        
+                <div class="car-light">
+                    <p id="carLightText">Auto Car Light:</p>
+                    <div class="light-1">
+                        <img id="carLightImg" src="img/light-1.png">
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+            <div class="line2">
+                <div class="car-key">
+                    <p id="carKeyText">Car Key: Lock</p>
+                    <img src="img/carkey-1.png">
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <script type="module" src="view.js"></script>
+</body>
+
+</html>

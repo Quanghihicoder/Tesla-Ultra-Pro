@@ -1,0 +1,286 @@
+/* Header */
+html {
+  background-image: url("img/road.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+body p {
+  color: white;
+  font-weight: 700;
+}
+.introduction {
+  /* text-align: center; */
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #cdc9a5;
+}
+
+.introduction .project-name {
+  flex: 0 0 30%;
+}
+
+.introduction .guideInf {
+  flex: 0 0 70%;
+  text-align: center;
+}
+
+.introduction .guideInf p {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 15px;
+  font-weight: 700;
+  color: rgba(3, 97, 42, 0.897);
+  font-size: 28px;
+}
+
+.introduction .project-name p {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 28px;
+}
+
+/* Mode control bar */
+.mode-control {
+  height: 50px;
+}
+
+.mode-control div {
+  display: inline;
+  margin-left: 17.5%;
+  position: relative;
+}
+
+.mode-control div button {
+  width: 150px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 18px;
+  border: 0px;
+  background-color: rgb(100, 100, 250);
+}
+
+.mode-control div button:hover {
+  background-color: rgb(19, 19, 246);
+}
+
+/* Control Robot Box */
+.control-board {
+  padding-top: 20px;
+  display: flex;
+}
+
+.control-board .control-box {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+#control-mode {
+  display: block;
+}
+
+#voice-mode,
+#steering-mode {
+  display: none;
+}
+
+.control-board .control-box .direction-display p {
+  font-size: 24px;
+  margin-left: 30%;
+}
+
+.control-board .control-box .mode1 div button {
+  margin-top: 20px;
+  width: 150px;
+  height: 100px;
+  border: 0px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(160, 53, 53);
+}
+
+.control-board .control-box .mode1 div button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.control-board .control-box .mode1 .inline-button {
+  display: inline;
+  margin-left: 90px;
+  position: relative;
+}
+.control-board .control-box .mode1 .center-button {
+  margin-left: 335px;
+}
+
+/* Display Robot Status */
+.control-board .notification {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.control-board .notification .line1 {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.control-board .notification .line1 .avoid-collision,
+.control-board .notification .line1 .car-abyss {
+  padding-right: 45px;
+}
+
+.control-board .notification .line2 {
+  display: flex;
+}
+
+.control-board .notification .line2 .gear {
+  display: flex;
+  padding-right: 50px;
+}
+
+.control-board .notification .line2 .gear .text {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: white;
+}
+
+#gearD {
+  color: red;
+}
+
+.control-board .notification .line2 .start-engine {
+  padding-right: 50px;
+}
+
+.control-board .control-box .mode3 {
+  height: 400px;
+  /* background-color: red; */
+}
+
+.control-board .control-box .mode3 img {
+  position: absolute;
+  top: 500px;
+  left: 370px;
+}
+.control-board .control-box .mode3 .texts {
+  padding-top: 50px;
+}
+
+.control-board .control-box .mode3 .texts p {
+  width: 50%;
+  padding: 10px 0px;
+  background-color: rgb(252, 74, 4);
+  font-size: 24px;
+  border-radius: 30%;
+  margin-left: 200px;
+  margin-top: 20px;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.control-board .control-box .mode3 .texts p.replay {
+  text-align: right;
+}
+
+#yourControl {
+  font-size: 24px;
+  color: brown;
+  font-weight: 600;
+  margin-left: 300px;
+}
+
+
+/* update */
+@media only screen and (max-width: 414px) {
+  .introduction {
+    width: 100%;
+  }
+
+  .introduction .project-name p {
+    font-size: 12px;
+  }
+
+  .introduction .guideInf p {
+    font-size: 12px;
+  }
+
+  .mode-control div {
+    margin-left: 10%;
+  }
+
+  .mode-control div button {
+    font-size: 10px;
+    width: 70px;
+  }
+
+  .control-board {
+    display: block;
+  }
+
+  .control-board .control-box {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .control-board .control-box .direction-display p {
+    font-size: 14px;
+    margin-left: 20%;
+  }
+
+  .control-board .control-box .mode1 div button {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(160, 53, 53);
+  }
+
+  .control-board .control-box .mode1 .inline-button {
+    display: inline;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  .control-board .control-box .mode1 .center-button {
+    margin-left: 155px;
+  }
+
+  .control-board .notification {
+    flex: none;
+    max-width: 100%;
+    padding-right: 0px;
+  }
+
+  .control-board .notification img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .control-board .notification p {
+    font-size: 9px;
+  }
+
+  .control-board .notification .line1 {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  .control-board .notification .line2 .gear {
+    padding-top: 20px;
+    display: flex;
+    padding-right: 20px;
+  }
+
+  .control-board .notification .line2 .gear .text {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
